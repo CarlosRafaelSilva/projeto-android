@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curiosidades de Tecnologia</title>
+<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d7f8e4;
+    overflow-x: hidden;
+}
+header{
+    background-image: linear-gradient(#46d078, #03441e 90%);
+    padding-top: 8px;
+    padding-bottom: 7px;
+    margin: -20px -20px 0;
+    text-align: center;
+    box-shadow: 1px 1px 8px rgb(46, 46, 46);
+    line-height: 1.4;
+}
+header > h1{
+    text-shadow: 1px 1px 3px black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+    color: #f4f4f4;
+}
+header p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 3px black;
+    font-size: 1.2em;
+    color: #f4f4f4;
+    padding: 14px;
+    padding-bottom: 26px;
+    max-width: 600px; /* Definir uma largura máxima relativa */
+    margin: auto;
+    margin-top: -18px;
+    line-height: 1.2em;
+    display: inline-block;
+}
+main p{ /*acrescentei o 'main que corrigiu o problema de centralização do texto no cabeçalho*/
+    text-indent: 30px;
+    font-weight: normal;
+    line-height: 2em;
+}
+main strong{
+    font-weight: bold;
+    color: #03441e;
+}
+section#menu a{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    transition: 0.3s;
+}
+section#menu {
+    text-align: left;
+    padding-left: 10px;
+}
+section#menu a:hover{
+    color: red;
+}
+article{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    padding-top: 1px;
+    max-width: 1000px;
+    text-align: justify;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: -20px;
+    word-wrap: break-word; /* Quebra de palavra */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 8px rgb(98, 98, 98);
+}
+article >h1{
+    color: rgb(3, 94, 41);
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    font-family: 'idroid', Helvetica, sans-serif;
+}
+article >h2{
+    background-image: linear-gradient(45deg, #aff2ca, white 98%);
+    color: rgb(3, 94, 41);
+    font-size: 23px;
+    margin-top: 5px;
+    font-family: 'idroid', Helvetica, sans-serif;
+    padding-left: 8px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem na página */
+}
+.destaque{
+    color: rgb(3, 94, 41);
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.destaque:hover{
+    text-decoration: underline;
+    color: red;
+}
+section#extra{
+    padding-top: 10px;
+}
+section#extra >article{
+    background-color: #abf0bc;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+    margin: -5px -5px 0; /* Adiciona margens negativas para cobrir os cantos superiores e laterais */
+    box-shadow: 5px 5px 5px 0px rgb(201, 200, 200);
+}
+p#aprender{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(73, 166, 112);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: -15px -15px;
+    text-indent: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+div.video {
+    background-color: #03441e;
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video > iframe {
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: -3px;
+    float: left;
+    width: 50%; /* Cada lista ocupa metade da largura da página */
+}
+li span{
+    text-decoration: underline;
+}
+li a{
+    color: black;
+}
+footer{ /*rodapé*/
+    background-color: #03441e;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    margin: -20px -20px; /* Adiciona margens negativas para cobrir os cantos superiores e laterais */
+    margin-top: 35px;
+}
+footer >p{
+    margin: 0px;
+    font-weight: normal;
+    overflow-x: hidden;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Curiosidades de Tecnologia</h1>
+<p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar.</p>
+
+    <section id="menu">
+        <a href="#">Home</a>
+        <a href="#">Notícias</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Fale Conosco</a>
+    </section>
+</header>
+<main>
+<section>
+    <article>
+        <h1>HISTÓRIA DO MASCOTE DO ANDROID</h1>
+        <p>Provavelmente você sabe que o sistema operacional <strong>Android</strong>, mantido pelo <strong>Google</strong> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.
+        </p>
+        
+        <h2>A PRIMEIRA VERSÃO</h2>
+        <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="" class="destaque">Dan Morrill</a></a> &#x1F517;. Ele conta que abriu o <a href=""class="destaque">Inkscape</a> &#x1F517; (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+        
+        <picture>
+            <source media="(max-width: 1200px)" srcset="imagens/dan-droids-pq.png" type="image/png">
+            <source srcset="imagens/dan-droids.png" type="image/png">
+            <img src="imagens/dan-droids.png" alt="Imagem flexível">
+        </picture>
+        
+        <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os <strong>Dandroids</strong>.</p>
+        
+        <h2>SURGE UM NOVO MASCOTE</h2>
+        <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a href=""class="destaque">Irina Blok</a> &#x1F517;, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+        
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <source srcset="imagens/irina-blok.jpg">
+            <img src="imagens/irina-blok-pq.jpg" alt="Imagem flexível">
+        </picture>
+        
+        <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o <a href="" class="destaque">Bugdroid</a>, o novo mascote do Android.</p>
+        
+        <img src="imagens/bugdroid.png" alt="">
+        
+        <p>A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=VfpqnNBJ6ezK5txR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <section id="extra">
+            <article>
+                <p id="aprender">Quer aprender mais?</p><br>
+                <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
+                <ul>
+                    <li> ✔  1.5 - <a href=""><span>Cupcake</span></li></a>
+                    <li> ✔  1.6 - <a href=""><span>Donut</span></li></a>
+                    <li> ✔  3.0 - <a href=""><span>Eclair</span></li></a>
+                    <li> ✔  2.2 - <a href=""><span>Froyo</span></li></a>
+                    <li> ✔  2.3 - <a href=""><span>Gingerbread</span></li></a>
+                    <li> ✔  3.0 - <a href=""><span>Honeycomb</span></li></a>
+                    <li> ✔  4.0 - <a href=""><span>Ice Cream Sandwich</span></li></a>
+                </ul>
+                <ul>
+                    <li> ✔  4.1 - <a href=""><span>Jelly Bean</span></li></a>
+                    <li> ✔  4.4 - <a href=""><span>KitKat</span></li></a>
+                    <li> ✔  5.0 - <a href=""><span>Lolipop</span></li></a>
+                    <li> ✔  6.0 - <a href=""><span>Marshmallow</span></li></a>
+                    <li> ✔  7.0 - <a href=""><span>Nougat</span></li></a>
+                    <li> ✔  8.0 - <a href=""><span>Oreo</span></li></a>
+                    <li> ✔  9.0 - <a href=""><span>Pie</span></li></a>
+                </ul>
+                    <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
+                    <p>Acesse aqui o site <a href="" class="destaque">Android History</a> &#x1F517; para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
+            </article>
+        </section>
+        <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema <a href="" class="destaque">Android</a> e seu simpático mascote.</p>
+    </article>
+</section>
+</main>
+<footer>
+<p style="font-size: 13px;">Site criado por <strong style="font-weight: 800;">Gustavo Guanabara</strong> para o <strong style="font-weight: 800;">CursoEmVideo</strong></p>
+</footer>
+</body>
+</html>
